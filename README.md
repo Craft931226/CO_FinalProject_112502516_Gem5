@@ -12,6 +12,7 @@
 * 僅指令不同，在 所有指令.txt 裡
 ## (Q4) Modify last level cache policy based on frequency based replacement policy (15%)
 * 修改 configs/common/Caches.py/L3Cache 的replacement_policy
+(假設系統使用LRURP)
 ## (Q5) Test the performance of write back and write through policy based on 4-way associative cache with isscc_pcm(15%) 
  必須跑benchmark multiply 在 write through 跟 write back ( gem5 default 使用 write back，可以用 write request 的數量判斷write through 是否成功 
 * 修改 src/mem/cache/cache.cc and cache.hh 但未在數據成果有顯著差異
