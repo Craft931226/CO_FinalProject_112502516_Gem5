@@ -73,12 +73,12 @@ class L2Cache(Cache):
     write_buffers = 8
 
 class L3Cache(Cache):
-    assoc = 8
-    tag_latency = 20
-    data_latency = 20
-    response_latency = 20
-    mshrs = 20
-    tgts_per_mshr = 12
+    assoc = 16
+    tag_latency = 40
+    data_latency = 40
+    response_latency = 40
+    mshrs = 24
+    tgts_per_mshr = 16
     write_buffers = 8
     write_through = False
     replacement_policy = Param.BaseReplacementPolicy(LRURP(), "Replacement policy")
